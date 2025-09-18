@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            
+             </head>
+        <body>
+            <style>
+                body {
+                  background-image: url('coatinsert.jpg');
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  margin: 0;
+                  padding: 0;
+                  min-height: 100vh;
+                }
+                </style>
+
+<div class="Floor">
+    <style>
+        .Floor {
+            background-color: #DbC5E7;
+            width: 90vw;
+            height: 50vh;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</div>
+
+<div class="Wall">
+    <style>
+        .Wall {
+            background-color: #C9A9DB;
+            width: 90vw;
+            height: 50vh;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</div>
+
+
+        <div class="LeftCircle">
+            <style>
+                .LeftCircle {
+                    background-color: #170C1D;
+                    width: 90px;
+                    height: 100vh;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 5%;
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+        </div>
+
+        <div class="RightCircle">
+            <style>
+                .RightCircle {
+                    background-color: #170C1D;
+                    width: 90px;
+                    height: 100vh;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 95%;
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+        </div>
+
+        <div class="BodyContainer">
+            <style>
+                .BodyContainer {
+                    width: 70vw;
+                    height: 35vw;
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(180deg);
+                    overflow: hidden;
+                }
+            </style>
+            <div class="Body">
+                <style>
+                    .Body {
+                        background-color: #632398;
+                        width: 70vw;
+                        height: 70vw;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0%;
+                        left: 50%;
+                        transform: translate(-50%, -50%)
+                    }
+                </style>
+            </div>
+        </div>
+
+        <div class="SapphireHead">
+            <img src="sapphirehead.png" alt="Sapphire Head" style="width: 91.378125vw; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        </div>
+
+        <div class="LeftSmallCircle">
+            <style>
+                .LeftSmallCircle {
+                    background-color: #632398;
+                    width: 105px;
+                    height: 65px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 75%;
+                    left: 15%;
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+        </div>
+
+        <div class="RightSmallCircle">
+            <style>
+                .RightSmallCircle {
+                    background-color: #632398;
+                    width: 155px;
+                    height: 75px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 75%;
+                    left: 83%;
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+        </div>
+
+        <div class="Square">
+                <div class="SquareShape" onclick="expandSquare()">
+                <style>
+                    .SquareShape {
+                        width: 200px;
+                        height: 20px;
+                        background-color: #170C1D;
+                        border-radius: 10px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: all 1s ease-in-out;
+                        cursor: pointer;
+                    }
+                    .SquareShape.expanded {
+                        width: 91.378125vw;
+                        height: 91.378125vw;
+                        border-radius: 20px;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <script>
+            function expandSquare() {
+                const square = document.querySelector('.SquareShape');
+                square.classList.add('expanded');
+                setTimeout(() => {
+                    window.location.href = 'fifth.html';
+                }, 1000);
+            }
+        </script>
+
+        </body>
+</html>
